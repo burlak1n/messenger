@@ -10,4 +10,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  }
+  .wrapper {
+    max-width: 40%;
+    margin: 100px auto;
+    min-width: 720px;
 }
+  .join-block {
+    margin: 0 auto;
+    width: 300px;
+}
+/* .wrapper {
+  max-width: 40%;
+  margin: 100px auto;
+  min-width: 720px;
+} */
