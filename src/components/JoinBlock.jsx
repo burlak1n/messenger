@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import socket from '../socket';
+import React from 'react';
+import axios from 'axios';
 
 function JoinBlock() {
     const [roomID, setRoomID] = React.useState('');
@@ -8,7 +8,10 @@ function JoinBlock() {
         if (!roomID || !userName) {
             return alert("Введите данные")
         }
-        console.log(roomID, userName)
+        axios.post('/rooms', {
+            roomID,
+            userName,
+        })
     }
     return(
     <div className="join-block">
