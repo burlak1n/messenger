@@ -1,10 +1,9 @@
-import React from 'react';
-import JoinBlock from './components/JoinBlock';
-import socket from './socket';
+import React from "react";
+import JoinBlock from "./components/JoinBlock";
 
 function App() {
   return (
-    <div className = "wrapper">
+    <div className="wrapper">
       <JoinBlock />
     </div>
   );
