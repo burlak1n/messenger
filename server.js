@@ -26,21 +26,12 @@ app.post("/rooms", (req, res) => {
       ])
     );
   }
-  console.log([...rooms.keys()]);
-  res.json([...rooms.keys()]);
+  res.send();
 });
 
 io.on("connection", (socket) => {
   console.log("user connected", socket.id);
-  // socket.on('disconnect', () => {
-  //     console.log('user disconnected', socket.id);
-  // });
 });
-
-// app.get('/', function (req, res) {
-//     console.log('Hello');
-//     res.send('ответ');
-// });
 
 server.listen(8888, (err) => {
   if (err) {

@@ -1,6 +1,6 @@
 * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: none;
   color: black;
 }
@@ -105,4 +105,51 @@
 .chat-messages form textarea {
   width: 100%;
   margin-bottom: 10px;
+}
+
+body {
+  background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+}
+.text-field__input {
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+}
+
+.floating-button {
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 375px;
+  height: 45px;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.6s;
+}
+.floating-button:hover {
+  /* background: #2ee59d; */
+  background: #18b073;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+input::selection {
+  background:  #20cd8875;
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
